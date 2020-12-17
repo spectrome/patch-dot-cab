@@ -1,0 +1,14 @@
+{
+  "name": "patch-dot-cab",
+  "description": "Patch.cab - Create, Mix and Share Modular Eurorack Synthesizers",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "patchcab --dev",
+    "build": "patchcab"
+  },
+  "dependencies": {
+    "@patchcab/core": "^0.1.2",
+    "@patchcab/modules": "^0.1.0"
+  }
+}
