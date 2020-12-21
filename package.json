@@ -8,7 +8,7 @@
     "build": "patchcab"
   },
   "dependencies": {
-    "@patchcab/core": "^0.1.4",
-    "@patchcab/modules": "^0.1.4"
+    "@patchcab/core": "^0.1.5",
+    "@patchcab/modules": "^0.1.5"
   }
 }
