@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "patchcab --dev",
-    "build": "patchcab"
+    "build": "patchcab",
+    "vercel-build": "patchcab"
   },
   "dependencies": {
     "@patchcab/core": "0.1.6",
