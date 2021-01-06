@@ -1,7 +1,6 @@
 import type { Module, Patch } from '@patchcab/core/lib/types';
-import library from '../public/modules.json';
-
-const moduleNames = library.map(({ set, name }) => `${set}/${name}`);
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
 type Rack = {
   title: string;
@@ -11,6 +10,11 @@ type Rack = {
 
 const validatePatch = (rack: Rack): boolean => {
   let valid = true;
+
+  const library = JSON.parse(
+    readFileSync(join(__dirname, '../public/modules.json'), 'utf8')
+  );
+  const moduleNames = library.map(({ set, name }) => `${set}/${name}`);
 
   rack.modules.forEach(({ id }) => {
     const moduleName = id.substr(0, id.lastIndexOf('-'));

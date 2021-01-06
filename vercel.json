@@ -1,3 +1,8 @@
 {
-  "rewrites": [{ "source": "/:id", "destination": "/" }]
+  "rewrites": [{ "source": "/:id", "destination": "/" }],
+  "functions": {
+    "api/share.ts": {
+      "includeFiles": "public/modules.json"
+    }
+  }
 }
