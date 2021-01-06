@@ -13,6 +13,7 @@ export default async (request: NowRequest, response: NowResponse) => {
     const url = await savePatch(title, rack);
     response.status(200).send(JSON.stringify({ url }));
   } catch (error) {
+    console.error(error);
     response.status(422).send(JSON.stringify({ error: error.message }));
   }
 };
