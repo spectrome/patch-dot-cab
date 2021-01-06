@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "patchcab --dev",
-    "build": "patchcab",
-    "vercel-build": "patchcab"
+    "start": "patchcab",
+    "build": "patchcab --build",
+    "vercel-build": "patchcab --build"
   },
   "dependencies": {
     "@patchcab/core": "0.1.6",
