@@ -11,9 +11,7 @@ type Rack = {
 const validatePatch = (rack: Rack): boolean => {
   let valid = true;
 
-  const library = JSON.parse(
-    readFileSync(join(__dirname, '../public/modules.json'), 'utf8')
-  );
+  const library = JSON.parse(readFileSync(join(__dirname, '../modules.json'), 'utf8'));
   const moduleNames = library.map(({ set, name }) => `${set}/${name}`);
 
   rack.modules.forEach(({ id }) => {
