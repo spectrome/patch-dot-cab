@@ -9,8 +9,8 @@
     "vercel-build": "patchcab --build"
   },
   "dependencies": {
-    "@patchcab/core": "0.1.6",
-    "@patchcab/modules": "0.1.6",
+    "@patchcab/core": "0.1.7",
+    "@patchcab/modules": "0.1.7",
     "apisauce": "^2.0.1"
   },
   "devDependencies": {
