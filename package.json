@@ -1,7 +1,7 @@
 {
   "name": "patch-dot-cab",
-  "description": "Patch.cab - Create, Mix and Share Modular Eurorack Synthesizers",
-  "version": "1.0.0",
+  "description": "Modular Eurorack style synthesizer made with Web Audio",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "start": "patchcab",
