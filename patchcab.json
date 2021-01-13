@@ -1,0 +1,174 @@
+{
+  "modules": [
+    {
+      "state": { "attack": 0, "decay": 0.25, "sustain": 0, "release": 0.14 },
+      "position": { "x": 96, "y": 0 },
+      "id": "@patchcab-modules/ADSR-skyic41oz"
+    },
+    {
+      "position": { "x": 384, "y": 0 },
+      "id": "@patchcab-modules/VOL-ce685xc9c",
+      "state": { "volume": -3.86 }
+    },
+    { "position": { "x": 992, "y": 0 }, "id": "@patchcab-modules/OUT-kn13id100" },
+    {
+      "state": {
+        "note": "\nHi, I'm Patchcab 🎛\n\nTurn up the volume on the OUT module to hear some noise.\n\n\nPress SPACE to add some more modules.\n\n\nHave fun 🤘\n\n\n"
+      },
+      "position": { "x": 1088, "y": 0 },
+      "id": "@patchcab-modules/Notes-oc5n4iwp8"
+    },
+    {
+      "state": { "attack": 0.03, "decay": 0, "sustain": 0, "release": 4.03 },
+      "position": { "x": 288, "y": 0 },
+      "id": "@patchcab-modules/ADSR-qd3ewgbza"
+    },
+    {
+      "state": { "freq": 7.39 },
+      "position": { "x": 0, "y": 0 },
+      "id": "@patchcab-modules/Clock-qsf9aimof"
+    },
+    {
+      "state": { "freq": 50, "type": "sine", "fm": 0.12 },
+      "position": { "x": 192, "y": 0 },
+      "id": "@patchcab-modules/OSC-i88kylsz8"
+    },
+    {
+      "state": {
+        "grid": [
+          [1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0],
+          [1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0],
+          [1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        ]
+      },
+      "position": { "x": 480, "y": 0 },
+      "id": "@patchcab-modules/SEQ-o91pagosy"
+    },
+    {
+      "state": { "freq": 40, "type": "sawtooth", "fm": 0.3 },
+      "position": { "x": 0, "y": 380 },
+      "id": "@patchcab-modules/FM-sgx7mkob3"
+    },
+    {
+      "position": { "x": 288, "y": 380 },
+      "id": "@patchcab-modules/VOL-v4r0z87uq",
+      "state": { "volume": -14 }
+    },
+    {
+      "state": { "attack": 0, "decay": 0.72, "sustain": 0.85, "release": 0.72 },
+      "position": { "x": 96, "y": 380 },
+      "id": "@patchcab-modules/ADSR-xv9dbsyps"
+    },
+    {
+      "state": { "attack": 0, "decay": 0.15, "sustain": 0.38, "release": 0.69 },
+      "position": { "x": 192, "y": 380 },
+      "id": "@patchcab-modules/ADSR-ad90boczn"
+    },
+    {
+      "state": { "freq": 800, "type": "highpass", "cv": 1 },
+      "position": { "x": 384, "y": 380 },
+      "id": "@patchcab-modules/VCF-ikmcbhtxn"
+    },
+    {
+      "state": { "type": "white" },
+      "position": { "x": 480, "y": 380 },
+      "id": "@patchcab-modules/NOISE-d6cq6si1k"
+    },
+    {
+      "state": { "attack": 0, "decay": 0.1, "sustain": 0.1, "release": 0.39 },
+      "position": { "x": 576, "y": 380 },
+      "id": "@patchcab-modules/ADSR-y7qh70pky"
+    },
+    {
+      "position": { "x": 672, "y": 380 },
+      "id": "@patchcab-modules/VOL-vslm425uk",
+      "state": { "volume": -9 }
+    },
+    {
+      "state": { "freq": 0.1, "type": "sawtooth" },
+      "position": { "x": 768, "y": 380 },
+      "id": "@patchcab-modules/LFO-s058rfklk"
+    }
+  ],
+  "patches": [
+    {
+      "input": "@patchcab-modules/OUT-kn13id100://audio-in",
+      "output": "@patchcab-modules/VOL-ce685xc9c://audio-out"
+    },
+    {
+      "input": "@patchcab-modules/VOL-ce685xc9c://cv-1",
+      "output": "@patchcab-modules/ADSR-qd3ewgbza://cv"
+    },
+    {
+      "input": "@patchcab-modules/VOL-ce685xc9c://audio-in",
+      "output": "@patchcab-modules/OSC-i88kylsz8://audio-out"
+    },
+    {
+      "input": "@patchcab-modules/OSC-i88kylsz8://signal-in",
+      "output": "@patchcab-modules/ADSR-skyic41oz://cv"
+    },
+    {
+      "input": "@patchcab-modules/SEQ-o91pagosy://gate",
+      "output": "@patchcab-modules/Clock-qsf9aimof://gate-out-1"
+    },
+    {
+      "input": "@patchcab-modules/ADSR-skyic41oz://gate",
+      "output": "@patchcab-modules/SEQ-o91pagosy://out-gate-0"
+    },
+    {
+      "input": "@patchcab-modules/ADSR-qd3ewgbza://gate",
+      "output": "@patchcab-modules/SEQ-o91pagosy://out-gate-0"
+    },
+    {
+      "input": "@patchcab-modules/VOL-v4r0z87uq://cv-1",
+      "output": "@patchcab-modules/ADSR-xv9dbsyps://cv"
+    },
+    {
+      "input": "@patchcab-modules/ADSR-xv9dbsyps://gate",
+      "output": "@patchcab-modules/SEQ-o91pagosy://out-gate-1"
+    },
+    {
+      "input": "@patchcab-modules/VOL-v4r0z87uq://audio-in",
+      "output": "@patchcab-modules/FM-sgx7mkob3://audio-out"
+    },
+    {
+      "input": "@patchcab-modules/ADSR-ad90boczn://gate",
+      "output": "@patchcab-modules/SEQ-o91pagosy://out-gate-1"
+    },
+    {
+      "input": "@patchcab-modules/FM-sgx7mkob3://signal-in",
+      "output": "@patchcab-modules/ADSR-ad90boczn://cv"
+    },
+    {
+      "input": "@patchcab-modules/VCF-ikmcbhtxn://audio-in",
+      "output": "@patchcab-modules/VOL-v4r0z87uq://audio-out"
+    },
+    {
+      "input": "@patchcab-modules/OUT-kn13id100://audio-in",
+      "output": "@patchcab-modules/VCF-ikmcbhtxn://audio-out"
+    },
+    {
+      "input": "@patchcab-modules/VOL-vslm425uk://audio-in",
+      "output": "@patchcab-modules/NOISE-d6cq6si1k://audio-out"
+    },
+    {
+      "input": "@patchcab-modules/VOL-vslm425uk://cv-1",
+      "output": "@patchcab-modules/ADSR-y7qh70pky://cv"
+    },
+    {
+      "input": "@patchcab-modules/ADSR-y7qh70pky://gate",
+      "output": "@patchcab-modules/SEQ-o91pagosy://out-gate-2"
+    },
+    {
+      "input": "@patchcab-modules/OUT-kn13id100://audio-in",
+      "output": "@patchcab-modules/VOL-vslm425uk://audio-out"
+    },
+    {
+      "input": "@patchcab-modules/VCF-ikmcbhtxn://cv-in",
+      "output": "@patchcab-modules/LFO-s058rfklk://audio-out"
+    }
+  ]
+}

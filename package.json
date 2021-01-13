@@ -5,12 +5,12 @@
   "license": "MIT",
   "scripts": {
     "start": "patchcab",
-    "build": "patchcab --build",
-    "vercel-build": "patchcab --build"
+    "build": "patchcab --build --rack patchcab.json",
+    "vercel-build": "patchcab --build --rack patchcab.json"
   },
   "dependencies": {
-    "@patchcab/core": "0.1.7",
-    "@patchcab/modules": "0.1.7",
+    "@patchcab/core": "0.2.1",
+    "@patchcab/modules": "0.2.1",
     "apisauce": "^2.0.1"
   },
   "devDependencies": {
