@@ -9,9 +9,10 @@
     "vercel-build": "patchcab --build --rack patchcab.json"
   },
   "dependencies": {
-    "@patchcab/core": "0.2.2",
-    "@patchcab/modules": "0.2.2",
-    "apisauce": "^2.0.1"
+    "@patchcab/core": "0.2.5",
+    "@patchcab/modules": "0.2.5",
+    "apisauce": "^2.0.1",
+    "patchcab-kaleido": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.21",
