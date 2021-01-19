@@ -58,10 +58,10 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@patchcab/core@0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@patchcab/core/-/core-0.2.5.tgz#133c52dc443ae65b8f0fb10433c21c51455bc2be"
-  integrity sha512-6g3Ce4gx8rQa3T3v37reUE83sw33QYns6lHJhVo5Gh95LSkwKNXZhT0dpGbKQDyRKSyDZ7pbDGFo0xWEI66DgA==
+"@patchcab/core@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@patchcab/core/-/core-1.0.0.tgz#9b7070564406d18890460728ea1c9e242b079bb2"
+  integrity sha512-3UXaRqC0IARcrhZa7J1A5vUNmzmZH7DSsIR8DyAqBHVl7nNNILL8cGA0oqY0+3vpNRhyWCvUlsKJD86BiEQQ5g==
   dependencies:
     "@rollup/plugin-commonjs" "^17.0.0"
     "@rollup/plugin-node-resolve" "^11.0.1"
@@ -91,10 +91,10 @@
     tone "14.7.77"
     typescript "^4.1.3"
 
-"@patchcab/modules@0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@patchcab/modules/-/modules-0.2.5.tgz#d81166cd22817c0113b5d276a66300d90b53f2bb"
-  integrity sha512-DS7K0mrOTIg5kEx5HpUq3+NLTcjnIX/Gr1STfLnCqSPMBmE6Oda7RaUthheBrLmZrQxnIGhD893ZjJKyCdl7NA==
+"@patchcab/modules@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@patchcab/modules/-/modules-1.0.0.tgz#0bb5fd63b4853d6815774939c473381ae411b61a"
+  integrity sha512-h71ZEdLuAJnB6i62AHxhDccGsyJL03G8YspO7+NXnH9UHFN4ChpHlhmRNPkwWCglcnwkgyGZGdA5sNqXL+cw8Q==
 
 "@rollup/plugin-commonjs@^17.0.0":
   version "17.0.0"
@@ -2225,12 +2225,10 @@ pascal-case@^3.1.2:
     no-case "^3.0.4"
     tslib "^2.0.3"
 
-patchcab-kaleido@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/patchcab-kaleido/-/patchcab-kaleido-1.0.0.tgz#efa9a0cd3285a57fcf63740c07ab5d33c7f1e0ed"
-  integrity sha512-VaDZCesQPZz6BPy+dihxsPpxrI95IMDvU0RsS3tn8na2w0tc4ngskKz5bQWbuvz4rLrM6D8ZiFnHqF4a1QYpcg==
-  dependencies:
-    "@patchcab/core" "0.2.5"
+patchcab-kaleido@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/patchcab-kaleido/-/patchcab-kaleido-1.0.2.tgz#49b3de5da048d38d4f54dcc48795297f1d38d8ba"
+  integrity sha512-Hd0SNi15rfUFRj3+B8vQrcvoKOI1yVwI7Ew6+AfsG0Ww2a+ieHECJN8MnWGO0AiF3fJRLTf+JVgAJ89t2Ns2tw==
 
 path-exists@^2.0.0:
   version "2.1.0"
