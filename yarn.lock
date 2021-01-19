@@ -58,10 +58,10 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@patchcab/core@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@patchcab/core/-/core-1.0.1.tgz#e7c96caf1b8f3e3ffe352e3584ffa0f18ca51812"
-  integrity sha512-3Wc6cICJ44+KK9Lww3sEyJ0FAZh9IfLGaXcomJaESKBjuZhISvq7TdhoPHkJOyQPVz2mmWWZhFXnGqcrZVr87A==
+"@patchcab/core@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@patchcab/core/-/core-1.0.2.tgz#5fc4698186f86d6a04bf20eaa5230c1daac2c921"
+  integrity sha512-Cf29dANXsRKLY/Firm0wf3QUoA49/UVAmATraryZsWhAsqZPnGun+hFShU1Z/Sbl/zNsoqOyS/6OVYRefRtveg==
   dependencies:
     "@rollup/plugin-commonjs" "^17.0.0"
     "@rollup/plugin-node-resolve" "^11.0.1"
@@ -91,10 +91,10 @@
     tone "14.7.77"
     typescript "^4.1.3"
 
-"@patchcab/modules@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@patchcab/modules/-/modules-1.0.1.tgz#5ecf410792ffd3b72e4189e3a93cecb557a2b653"
-  integrity sha512-QvuzDE5jy424JWU88qCPGBH8U4WDOaivruOTgzeZp2Ow1R/JcZymwfkgT5gnoxNB6QbD4jCg/5QH4YAPk5ya1Q==
+"@patchcab/modules@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@patchcab/modules/-/modules-1.0.2.tgz#8928853e231cfbb0158eccb685ec54c155c96db2"
+  integrity sha512-DrQvxJ5PuPLvbKMn8kL2Pv2UPQqepcDkm1X3hs1d8k+uNwqXmTH4xdupS4waw4DXLOSzeEPxaUPpL6kIN0h3BA==
 
 "@rollup/plugin-commonjs@^17.0.0":
   version "17.0.0"
