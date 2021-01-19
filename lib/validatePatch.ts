@@ -1,26 +1,38 @@
-import type { LibraryItem, Module, Patch } from '@patchcab/core/lib/types';
+import type { Rack } from './types';
 
-type Rack = {
-  title: string;
-  modules: Module[];
-  patches: Patch[];
-};
-
-const validatePatch = (rack: Rack, library: LibraryItem[]): boolean => {
+const validatePatch = (rack: Rack): boolean => {
   let valid = true;
 
-  const moduleNames = library.map(
-    ({ set, name }) => `${set}/${name.replace(/[^a-z0-9_-]/gi, '_').toLowerCase()}`
-  );
+  if (!rack.title) {
+    console.log(rack);
+    return false;
+  }
 
-  rack.modules.forEach(({ id }) => {
-    const moduleName = id.substr(0, id.lastIndexOf('-'));
-    if (moduleNames.indexOf(moduleName) < 0) {
+  rack.modules.forEach((module) => {
+    if (
+      !module.id ||
+      typeof module.position.x !== 'number' ||
+      typeof module.position.y !== 'number'
+    ) {
+      console.log('2.');
       valid = false;
     }
   });
 
-  return true;
+  rack.patches.forEach((patch) => {
+    if (
+      !rack.modules.find(
+        (module) =>
+          patch.input.indexOf(`${module.id}://`) === 0 ||
+          patch.output.indexOf(`${module.id}://`) === 0
+      )
+    ) {
+      console.log('3.');
+      valid = false;
+    }
+  });
+
+  return valid;
 };
 
 export default validatePatch;

@@ -1,5 +1,4 @@
 import { create } from 'apisauce';
-import type { LibraryItem } from '@patchcab/core/lib/types';
 import type { Rack } from './types';
 import validatePatch from './validatePatch';
 
@@ -15,12 +14,8 @@ const randomID = (): string => {
   return Math.random().toString(36).substr(2, 8);
 };
 
-const savePatch = async (
-  title: string,
-  rack: Rack,
-  library: LibraryItem[]
-): Promise<string> => {
-  const valid = validatePatch(rack, library);
+const savePatch = async (rack: Rack): Promise<string> => {
+  const valid = validatePatch(rack);
 
   if (!valid) {
     throw Error('Invalid rack');
@@ -46,7 +41,6 @@ const savePatch = async (
   }
 
   const insert = await api.post<Rack>(`/patches`, {
-    title,
     url,
     rack,
   });
