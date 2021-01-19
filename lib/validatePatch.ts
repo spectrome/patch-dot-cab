@@ -9,7 +9,9 @@ type Rack = {
 const validatePatch = (rack: Rack, library: LibraryItem[]): boolean => {
   let valid = true;
 
-  const moduleNames = library.map(({ set, name }) => `${set}/${name}`);
+  const moduleNames = library.map(
+    ({ set, name }) => `${set}/${name.replace(/[^a-z0-9_-]/gi, '_').toLowerCase()}`
+  );
 
   rack.modules.forEach(({ id }) => {
     const moduleName = id.substr(0, id.lastIndexOf('-'));

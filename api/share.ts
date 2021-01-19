@@ -4,10 +4,6 @@ import { join } from 'path';
 import { savePatch } from '../lib/api';
 import type { Rack } from '../lib/types';
 
-readdirSync(join(__dirname, '../')).forEach((file) => {
-  console.log(file);
-});
-
 const library = readFileSync(join(__dirname, '../public/modules.json'), 'utf8');
 
 export default async (request: NowRequest, response: NowResponse) => {
