@@ -8,8 +8,8 @@
     "build": "patchcab --build --rack patchcab.json"
   },
   "dependencies": {
-    "@patchcab/core": "1.1.1",
-    "@patchcab/modules": "1.1.1",
+    "@patchcab/core": "1.1.3",
+    "@patchcab/modules": "1.1.3",
     "apisauce": "^2.1.2",
     "patchcab-kaleido": "^1.0.2"
   },
